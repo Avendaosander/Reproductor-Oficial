@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor</title>
+
+    <link rel="stylesheet" href="estilos.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="contenedor margin-bottom">
+          <h1 class="logo_nombre no-margin">Reproductor</h1>
+      </div>
+    </header>
+
+    <div class="contenedor">
+      <form>
+        <div>
+          <label for="playlist">File:</label>
+          <input id="playlist" name="playlist" type="file">
+        </div>
+        
+        <div id="botonExportar" class="botones ocultar">
+          <button id="export" type="button" class="noMostrar">Export</button>
+          <button id="historial" type="button">Historial de Reproducciones</button>
+        </div>
+      </form>
+    </div>
+
+    <div id="player"></div>
+
+    <div class=" margin-bottom tabla">
+      <table id="reproduccion"></table>
+    </div>
+
+    <div class="contenedor creadores">
+      <h2 class="no-margin">Creadores:</h2>
+      <p>Alexander Avendaño</p>
+      <p>Richard Quintero</p>
+      <p>María Páez</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
